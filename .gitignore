@@ -2,5 +2,9 @@
 Logs/
 Library/
 Temp/
+.idea/
+376-project.sln
+Assembly-CSharp.csproj
+obj/
 Final project.docx
 Self assessment.docx
