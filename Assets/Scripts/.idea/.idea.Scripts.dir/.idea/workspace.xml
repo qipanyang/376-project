@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/3_head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/3_head.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Warrior_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Warrior_03.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
