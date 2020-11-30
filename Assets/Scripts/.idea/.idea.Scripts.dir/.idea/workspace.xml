@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/3_head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/3_head.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Warrior_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Warrior_03.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CameraFollow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1kik3XoE0oL7QwnAzGMEMlvLKz2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,16 +29,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="" />
       <created>1606190602278</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606190602278</updated>
+      <workItem from="1606775396569" duration="409000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
