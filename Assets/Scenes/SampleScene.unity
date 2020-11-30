@@ -369,7 +369,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354574}
-        m_MethodName: generateArcher
+        m_MethodName: GenerateArcher
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -794,6 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   archerPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
     type: 3}
+  playerCastleObject: {fileID: 0}
 --- !u!4 &1813354575
 Transform:
   m_ObjectHideFlags: 0

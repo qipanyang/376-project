@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
         playerCastleObject = GameObject.Find("PlayerCastle");
     }
 
-    public void generateArcher()
+    public void GenerateArcher()
     {
         Vector3 playerCastlePosition = playerCastleObject.transform.position;
         Instantiate(archerPrefab, new Vector3(playerCastlePosition.x, playerCastlePosition.y - 0.5f, 0),
