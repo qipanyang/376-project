@@ -1,23 +1,35 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Castle;
+using Manager;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Ctx;
+
     public Minions.Archer archerPrefab;
     public GameObject playerCastleObject;
+    public GameObject enemyCastleObject;
+    
+    public MinionsManager MinionsManger { get; private set; }
 
-    public void Start()
+    internal void Start()
     {
-        playerCastleObject = GameObject.Find("PlayerCastle");
+        Ctx = this;
+        // playerCastleObject = GameObject.Find("PlayerCastle");
+        // enemyCastleObject = GameObject.Find("EnemyCastle");
+        MinionsManger = gameObject.AddComponent<MinionsManager>();
+        InitializeCastleStatus();
+        
     }
 
-    public void GenerateArcher()
+    private void InitializeCastleStatus()
     {
-        Vector3 playerCastlePosition = playerCastleObject.transform.position;
-        Instantiate(archerPrefab, new Vector3(playerCastlePosition.x, playerCastlePosition.y - 0.5f, 0),
-            Quaternion.Euler(0, 180, 0));
-        archerPrefab.Initialize(100, 10, -2);
+        EnemyCastle.Health = 200;
+        PlayerCastle.Health = 200;
+        PlayerCastle.MoneyRate = 20;
     }
+    
 }

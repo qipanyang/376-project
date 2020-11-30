@@ -584,8 +584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84bf1d7817dbe4f10b95d22ae840b214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  moneyRate: 0
 --- !u!1 &1782362976
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813354575}
   - component: {fileID: 1813354574}
+  - component: {fileID: 1813354576}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -794,7 +793,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   archerPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
     type: 3}
-  playerCastleObject: {fileID: 0}
+  playerCastleObject: {fileID: 1911655815}
+  enemyCastleObject: {fileID: 1519852480}
 --- !u!4 &1813354575
 Transform:
   m_ObjectHideFlags: 0
@@ -809,6 +809,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813354576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813354573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cc79ad4b534c54920bb48589a86486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  archerPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
+    type: 3}
 --- !u!1 &1911655815
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,6 @@ namespace Castle
         // Start is called before the first frame update
         void Start()
         {
-            Initialize(200, 0);
         }
 
         // Update is called once per frame

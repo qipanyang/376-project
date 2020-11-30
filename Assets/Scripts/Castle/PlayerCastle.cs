@@ -4,8 +4,9 @@ using UnityEngine;
 
 namespace Castle
 {
-    public class PlayerCastle : MonoBehaviour
+    public class PlayerCastle : Castle
     {
+        public static int MoneyRate { get; set; }
         // Start is called before the first frame update
         void Start()
         {
