@@ -368,7 +368,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1813354574}
+      - m_Target: {fileID: 1813354576}
         m_MethodName: GenerateArcher
         m_Mode: 1
         m_Arguments:
