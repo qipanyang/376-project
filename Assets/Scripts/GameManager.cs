@@ -1,23 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public archer archerPrefab;
-    // Start is called before the first frame update
-    void Start()
+    public Minions.Archer archerPrefab;
+    public GameObject playerCastleObject;
+
+    public void Start()
     {
-       
+        playerCastleObject = GameObject.Find("PlayerCastle");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void generateArcher()
     {
-        
-    }
-    public void generateArcher() {
-	Vector3 playerCastlePosition = GameObject.FindWithTag("PlayerCastle").transform.position;
-	Instantiate(archerPrefab, new Vector3(playerCastlePosition.x, playerCastlePosition.y-0.5f, 0), Quaternion.identity);
+        Vector3 playerCastlePosition = playerCastleObject.transform.position;
+        Instantiate(archerPrefab, new Vector3(playerCastlePosition.x, playerCastlePosition.y - 0.5f, 0),
+            Quaternion.Euler(0, 180, 0));
+        archerPrefab.Initialize(100, 10, -2);
     }
 }
