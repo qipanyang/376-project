@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -147,6 +148,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41031d98d9c14109ba7c6108dee0104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: -8
+  right: 25
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -198,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.32, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -215,8 +230,8 @@ GameObject:
   - component: {fileID: 668456851}
   - component: {fileID: 668456850}
   m_Layer: 0
-  m_Name: GrassThinSprite
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,8 +294,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668456849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -3.82, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.775, y: -2.87, z: -1}
+  m_LocalScale: {x: 2.5711324, y: 1.2416449, z: 1.2416449}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -313,17 +328,17 @@ RectTransform:
   m_GameObject: {fileID: 1284980944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3214, y: 1.3214, z: 1.3214}
   m_Children:
   - {fileID: 1782362977}
   - {fileID: 1496651129}
   m_Father: {fileID: 1783967212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289, y: 134}
-  m_SizeDelta: {x: 128.52803, y: 81.3374}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 158.7, y: 104.5}
+  m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284980946
 MonoBehaviour:
@@ -443,7 +458,7 @@ RectTransform:
   m_GameObject: {fileID: 1496651128}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.43953037, y: 0.37520403, z: 0.85757}
+  m_LocalScale: {x: 0.65894395, y: 0.5625059, z: 1.285669}
   m_Children: []
   m_Father: {fileID: 1284980945}
   m_RootOrder: 1
@@ -547,7 +562,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff98136f625d34e1eb0f76bf75e64ae0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e65d47977152b44d2b1163cc4a70434b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -566,8 +581,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519852480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.2, y: -2.6, z: 0}
-  m_LocalScale: {x: 0.1605792, y: 0.32635915, z: 1}
+  m_LocalPosition: {x: -10.16, y: -1.09, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -618,7 +633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 15}
+  m_AnchoredPosition: {x: 0, y: 24}
   m_SizeDelta: {x: 102, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1782362978
@@ -710,12 +725,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -795,6 +810,7 @@ MonoBehaviour:
     type: 3}
   playerCastleObject: {fileID: 1911655815}
   enemyCastleObject: {fileID: 1519852480}
+  MinionsManger: {fileID: 0}
 --- !u!4 &1813354575
 Transform:
   m_ObjectHideFlags: 0
@@ -823,6 +839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   archerPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
     type: 3}
+  minionArray: []
 --- !u!1 &1911655815
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +897,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff98136f625d34e1eb0f76bf75e64ae0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90dd0bab33f224ff993f678c3142791b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -899,8 +916,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911655815}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.18, y: -2.6, z: 0}
-  m_LocalScale: {x: 0.1605792, y: 0.32635915, z: 1}
+  m_LocalPosition: {x: 17.12, y: -1, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

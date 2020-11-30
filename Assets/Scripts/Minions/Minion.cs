@@ -18,9 +18,9 @@ namespace Minions
             this.speed = speed;
         }
 
-        private void OnBecameInvisible()
-        {
-            Destroy(gameObject);
-        }
+        // private void OnBecameInvisible()
+        // {
+        //     Destroy(gameObject);
+        // }
     }
 }

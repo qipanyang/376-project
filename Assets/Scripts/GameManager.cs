@@ -12,17 +12,25 @@ public class GameManager : MonoBehaviour
     public Minions.Archer archerPrefab;
     public GameObject playerCastleObject;
     public GameObject enemyCastleObject;
-    
-    public MinionsManager MinionsManger { get; private set; }
 
-    internal void Start()
+    public MinionsManager MinionsManger;
+	// setup camera follow system
+	private CameraFollow _cameraFollow;
+	private Vector3 _cameraFollowPosition;
+	
+    
+    // Start is called before the first frame update
+    void Start()
     {
-        Ctx = this;
-        // playerCastleObject = GameObject.Find("PlayerCastle");
-        // enemyCastleObject = GameObject.Find("EnemyCastle");
-        MinionsManger = gameObject.AddComponent<MinionsManager>();
-        InitializeCastleStatus();
-        
+	    
+	    Ctx = this;
+	    MinionsManger = GetComponent<MinionsManager>();
+	    
+	    // setup camera follow system
+	    _cameraFollow = GameObject.FindWithTag("MainCamera").GetComponent<CameraFollow>();
+	    _cameraFollow.Setup(() => _cameraFollowPosition);
+	    
+	    InitializeCastleStatus();
     }
 
     private void InitializeCastleStatus()
@@ -32,4 +40,21 @@ public class GameManager : MonoBehaviour
         PlayerCastle.MoneyRate = 20;
     }
     
+    
+    // Update is called once per frame
+    void Update()
+    {
+	    // setup camera follow system
+	    float movement = 10f;
+	    float edgeSize = 50f;
+	    if (Input.GetKey(KeyCode.LeftArrow))
+		    _cameraFollowPosition.x -= movement * Time.deltaTime;
+	    if (Input.GetKey(KeyCode.RightArrow))
+		    _cameraFollowPosition.x += movement * Time.deltaTime;
+	    if (Input.mousePosition.x > Screen.width - edgeSize)
+		    _cameraFollowPosition.x += movement * Time.deltaTime;
+	    if (Input.mousePosition.x < edgeSize)
+		    _cameraFollowPosition.x -= movement * Time.deltaTime;
+    }
+
 }
