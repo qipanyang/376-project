@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject playerCastleObject;
     public GameObject enemyCastleObject;
 
-    public MinionsManager MinionsManger;
+    public MinionsManager MinionsManager;
 	// setup camera follow system
 	private CameraFollow _cameraFollow;
 	private Vector3 _cameraFollowPosition;
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     {
 	    
 	    Ctx = this;
-	    MinionsManger = GetComponent<MinionsManager>();
+	    MinionsManager = GetComponent<MinionsManager>();
 	    
 	    // setup camera follow system
 	    _cameraFollow = GameObject.FindWithTag("MainCamera").GetComponent<CameraFollow>();

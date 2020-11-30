@@ -5,10 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerCastle
-<<<<<<< HEAD
-=======
   - Ground
->>>>>>> 300620ae459706ba503a37b40985df387c4989d7
   - EnemyCastle
   layers:
   - Default
