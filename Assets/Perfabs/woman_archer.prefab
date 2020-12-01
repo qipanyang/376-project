@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 4825396658791279009}
   - component: {fileID: 4825396658791279010}
   - component: {fileID: 4825396658791279008}
+  - component: {fileID: -5221039942807634632}
   m_Layer: 0
-  m_Name: Warrior_03
+  m_Name: woman_archer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4825396658791279013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.07, y: -3.11, z: 0}
+  m_LocalPosition: {x: -7.07, y: -3.11, z: -1}
   m_LocalScale: {x: 0.15509017, y: 0.13778616, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -143,3 +144,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6171d8ff553c74c3e8eaa7fce5886349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minionSide: 0
+  rb: {fileID: 0}
+  rd: {fileID: 0}
+  lastAttackTime: 0
+  animator: {fileID: -5221039942807634632}
+--- !u!95 &-5221039942807634632
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825396658791279013}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e0e0ec096da84e0e9af0dc863bdc343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

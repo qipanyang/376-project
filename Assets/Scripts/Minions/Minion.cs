@@ -15,6 +15,8 @@ namespace Minions
         public long lastAttackTime;
         private bool _isChangingColor;
         private bool _isRotating;
+        
+        public Animator animator; // animation
 
         public void Initialize(MinionData minionData, MinionSide minionSide)
         {
@@ -70,7 +72,8 @@ namespace Minions
             if (now - lastAttackTime > minionData.AttackCdInSeconds * 10E6)
             {
                 lastAttackTime = now;
-                StartCoroutine(RotateMinion());
+                //StartCoroutine(RotateMinion()); // animation
+                animator.SetBool("Attack", true); // animation
                 return true;
             }
             return false;

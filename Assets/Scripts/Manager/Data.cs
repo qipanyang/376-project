@@ -23,7 +23,7 @@ namespace Manager
 
         public static MinionData GetArcherMinionData()
         {
-            return new MinionData(200, 10, 1, 20, 2);
+            return new MinionData(200, 10, 1, 2, 2);
         }
 
         public static Quaternion GetPlayerFacing()
