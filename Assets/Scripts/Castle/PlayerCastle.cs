@@ -6,7 +6,7 @@ namespace Castle
 {
     public class PlayerCastle : Castle
     {
-        public static int MoneyRate { get; set; }
+        public int MoneyRate;
         // Start is called before the first frame update
         void Start()
         {

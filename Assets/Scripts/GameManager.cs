@@ -9,11 +9,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Ctx;
 
-    public Minions.Archer archerPrefab;
     public GameObject playerCastleObject;
     public GameObject enemyCastleObject;
 
     public MinionsManager MinionsManager;
+    public EnemyCastle EnemyCastle;
+    public PlayerCastle PlayerCastle;
+    
 	// setup camera follow system
 	private CameraFollow _cameraFollow;
 	private Vector3 _cameraFollowPosition;

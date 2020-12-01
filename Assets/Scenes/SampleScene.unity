@@ -392,7 +392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 993, y: 105.3}
+  m_AnchoredPosition: {x: 993, y: 105.299805}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427614366
@@ -850,7 +850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 358.2, y: 105.3}
+  m_AnchoredPosition: {x: 358.2002, y: 105.299805}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752878535
@@ -981,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1242, y: 105.3}
+  m_AnchoredPosition: {x: 1242, y: 105.299805}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828893207
@@ -1264,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 774, y: 105.3}
+  m_AnchoredPosition: {x: 774, y: 105.299805}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975606181
@@ -1473,7 +1473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1479, y: 105.3}
+  m_AnchoredPosition: {x: 1479, y: 105.299805}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1030545674
@@ -1604,7 +1604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 561.4, y: 105.3}
+  m_AnchoredPosition: {x: 561.4004, y: 105.299805}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1106214065
@@ -2071,6 +2071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84bf1d7817dbe4f10b95d22ae840b214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
 --- !u!1 &1553485127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,11 +2437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d1275b139194c8b8a46bec42b57d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archerPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
-    type: 3}
   playerCastleObject: {fileID: 1911655815}
   enemyCastleObject: {fileID: 1519852480}
   MinionsManager: {fileID: 0}
+  EnemyCastle: {fileID: 1519852483}
+  PlayerCastle: {fileID: 1911655818}
 --- !u!4 &1813354575
 Transform:
   m_ObjectHideFlags: 0
@@ -2565,6 +2566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af1cce93a56d479c89cd591d37c55e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  MoneyRate: 0
 --- !u!1 &1932252627
 GameObject:
   m_ObjectHideFlags: 0

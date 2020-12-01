@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+using Castle;
 using Manager;
 using UnityEngine;
 
@@ -14,6 +14,7 @@ namespace Minions
         public Renderer rd;
         public long lastAttackTime;
         private bool _isChangingColor;
+        private bool _isRotating;
 
         public void Initialize(MinionData minionData, MinionSide minionSide)
         {
@@ -38,19 +39,64 @@ namespace Minions
                 SetVelocity(0);
                 Attack(toAttack);
             }
+            else if (CheckCanAttackTower())
+            {
+                SetVelocity(0);
+                AttackCastle();
+            }
             else
             {
                 SetVelocity(minionData.Velocity);
             }
+            
+            
         }
 
-        public void Attack(Minion minion)
+        private bool CheckCanAttackTower()
+        {
+            if (minionSide == MinionSide.Enemy)
+            {
+                return rb.position.x + minionData.Range >= Data.GetPlayerCastlePosition().x;
+            }
+            else
+            {
+                return rb.position.x - minionData.Range <= Data.GetEnemyCastlePosition().x;
+            }
+        }
+
+        private bool CanAttack()
         {
             var now = DateTime.UtcNow.Ticks;
             if (now - lastAttackTime > minionData.AttackCdInSeconds * 10E6)
             {
                 lastAttackTime = now;
+                StartCoroutine(RotateMinion());
+                return true;
+            }
+            return false;
+        }
+
+        public void Attack(Minion minion)
+        {
+            if (CanAttack())
+            {
                 minion.IsAttacked(minionData.AttackDamage);
+            }
+        }
+
+        public void AttackCastle()
+        {
+            if (CanAttack())
+            {
+                GameManager ctx = GameManager.Ctx;
+                if (minionSide == MinionSide.Enemy)
+                {
+                    ctx.PlayerCastle.IsAttacked(minionData.AttackDamage);
+                }
+                else
+                {
+                    ctx.EnemyCastle.IsAttacked(minionData.AttackDamage);
+                }
             }
         }
 
@@ -60,7 +106,20 @@ namespace Minions
             StartCoroutine(ChangeColor(Color.red));
         }
 
-        public System.Collections.IEnumerator ChangeColor(Color newColor)
+        public IEnumerator RotateMinion()
+        {
+            if (_isRotating == false)
+            {
+                _isRotating = true;
+                rb.transform.Rotate(0, 0, -15, Space.Self);
+                yield return new WaitForSeconds(0.5f);
+                rb.transform.Rotate(0, 0, 15, Space.Self);
+                _isRotating = false;
+            }
+            
+        }
+
+        public IEnumerator ChangeColor(Color newColor)
         {
             if (_isChangingColor == false)
             {
