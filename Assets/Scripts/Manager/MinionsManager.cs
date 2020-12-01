@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Minions;
 using UnityEngine;
 
@@ -8,7 +10,9 @@ namespace Manager
     public class MinionsManager : MonoBehaviour
     {
         public Archer archerPrefab;
-        public List<Minion> minionArray = new List<Minion>();
+        
+        public List<Minion> EnemyMinions = new List<Minion>();
+        public List<Minion> PlayerMinions = new List<Minion>();
 
         internal void Start()
         {
@@ -17,20 +21,40 @@ namespace Manager
 
         public void SpawnEnemyMinions()
         {
-            Vector3 enemyCastlePosition = GameManager.Ctx.enemyCastleObject.transform.position;
-            archerPrefab.Initialize(100, 10, 1);
-            Minion minion = Instantiate(archerPrefab, new Vector3(enemyCastlePosition.x, enemyCastlePosition.y - 1.2f, 0),
-                Quaternion.identity);
-            minionArray.Add(minion);
+            if (EnemyMinions.Count <= 10)
+            {
+                Minion minion = Instantiate(archerPrefab, Data.GetEnemyCastlePosition(),
+                    Data.GetEnemyFacing());
+                minion.Initialize(Data.GetArcherMinionData(), MinionSide.Enemy);
+                EnemyMinions.Add(minion);   
+            }
             
         }
-        
+
+        private void Update()
+        {
+            RemoveDeadMinions(EnemyMinions);
+            RemoveDeadMinions(PlayerMinions);
+        }
+
+        private void RemoveDeadMinions(List<Minion> minions)
+        {
+            foreach (var minion in minions)
+            {
+                if (minion.IsDead())
+                {
+                    minion.DestroyGameObject();
+                }
+            }
+            minions.RemoveAll(minion => minion.IsDead());
+        }
+
         public void GenerateArcher()
         {
-            Vector3 playerCastlePosition = GameManager.Ctx.playerCastleObject.transform.position;
-            archerPrefab.Initialize(100, 10, -1);
-            Instantiate(archerPrefab, new Vector3(playerCastlePosition.x, playerCastlePosition.y - 1.2f, 0),
-                Quaternion.Euler(0, 180, 0));
+            Minion minion = Instantiate(archerPrefab, Data.GetPlayerCastlePosition(),
+                Data.GetPlayerFacing());
+            minion.Initialize(Data.GetArcherMinionData(), MinionSide.Player);
+            PlayerMinions.Add(minion);
         }
     }
 }
