@@ -14,6 +14,7 @@ namespace Castle
         // Update is called once per frame
         void Update()
         {
+            GameManager.Ctx.TextManager.UpdateEnemyCastleHealth(Health);
         }
     }
 }
