@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using Castle;
 using Manager;
 using UnityEngine;
 
@@ -12,7 +10,7 @@ namespace Minions
         public MinionData minionData;
         public Rigidbody2D rb;
         public Renderer rd;
-        public long lastAttackTime;
+        public float lastAttackTime;
         private bool _isChangingColor;
         private bool _isRotating;
         
@@ -68,8 +66,8 @@ namespace Minions
 
         private bool CanAttack()
         {
-            var now = DateTime.UtcNow.Ticks;
-            if (now - lastAttackTime > minionData.AttackCdInSeconds * 10E6)
+            var now = Time.time;
+            if (now - lastAttackTime > minionData.AttackCdInSeconds)
             {
                 lastAttackTime = now;
                 //StartCoroutine(RotateMinion()); // animation

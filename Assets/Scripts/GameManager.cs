@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject enemyCastleObject;
 
     public MinionsManager MinionsManager;
+    public GoldManager GoldManager;
+    
     public EnemyCastle EnemyCastle;
     public PlayerCastle PlayerCastle;
     
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
 	    
 	    Ctx = this;
 	    MinionsManager = GetComponent<MinionsManager>();
+	    GoldManager = GetComponent<GoldManager>();
 	    TextManager = new TextManager();
 
 	    // setup camera follow system

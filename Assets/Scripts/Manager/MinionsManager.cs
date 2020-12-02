@@ -51,9 +51,16 @@ namespace Manager
 
         public void GenerateArcher()
         {
+            var archerMinionData = Data.GetArcherMinionData();
+            var goldManager = GameManager.Ctx.GoldManager;
+            if (goldManager.DecreaseGold(archerMinionData.Price) == false)
+            {
+                return;
+            }
+            
             Minion minion = Instantiate(archerPrefab, Data.GetPlayerCastlePosition(),
                 Data.GetPlayerFacing());
-            minion.Initialize(Data.GetArcherMinionData(), MinionSide.Player);
+            minion.Initialize(archerMinionData, MinionSide.Player);
             PlayerMinions.Add(minion);
         }
     }
