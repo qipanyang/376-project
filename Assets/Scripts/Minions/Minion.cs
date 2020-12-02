@@ -11,8 +11,8 @@ namespace Minions
         public Rigidbody2D rb;
         public Renderer rd;
         public float lastAttackTime;
-        private bool _isChangingColor;
-        private bool _isRotating;
+        private bool _isChangingColor; // don't save
+        private bool _isRotating; // don't save
         
         public Animator animator; // animation
 
