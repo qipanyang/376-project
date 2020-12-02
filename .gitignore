@@ -3,6 +3,7 @@ Logs/
 Library/
 Temp/
 .idea/
+.vs/
 376-project.sln
 Assembly-CSharp.csproj
 obj/

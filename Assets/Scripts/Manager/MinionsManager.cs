@@ -9,26 +9,31 @@ namespace Manager
 {
     public class MinionsManager : MonoBehaviour
     {
-        public Archer archerPrefab;
-        
+        public WomanArcher WomanArcherPrefab;
+        public WomanAttacker WomanAttackerPrefab;
+        public WomanWarrior WomanWarrior;
+        public ElfArcher ElfArcher;
+        public ElfAttacker ElfAttacker;
+        public KnightPikeman KnightPikeman;
+        public KnightWarrior KnightWarrior;
+
         public List<Minion> EnemyMinions = new List<Minion>();
         public List<Minion> PlayerMinions = new List<Minion>();
 
         internal void Start()
         {
-            InvokeRepeating(nameof(SpawnEnemyMinions), 0, 1f);
+            InvokeRepeating(nameof(SpawnEnemyMinions), 0, 3f);
         }
 
         public void SpawnEnemyMinions()
         {
             if (EnemyMinions.Count <= 10)
             {
-                Minion minion = Instantiate(archerPrefab, Data.GetEnemyCastlePosition(),
+                Minion minion = Instantiate(WomanArcherPrefab, Data.GetEnemyCastlePosition(),
                     Data.GetEnemyFacing());
-                minion.Initialize(Data.GetArcherMinionData(), MinionSide.Enemy);
-                EnemyMinions.Add(minion);   
+                minion.Initialize(Data.GetWomanArcherMinionData(), MinionSide.Enemy);
+                EnemyMinions.Add(minion);
             }
-            
         }
 
         private void Update()
@@ -46,22 +51,57 @@ namespace Manager
                     minion.DestroyGameObject();
                 }
             }
+
             minions.RemoveAll(minion => minion.IsDead());
         }
 
-        public void GenerateArcher()
+        private void GenerateMinion(MinionData minionData, Minion prefab)
         {
-            var archerMinionData = Data.GetArcherMinionData();
             var goldManager = GameManager.Ctx.GoldManager;
-            if (goldManager.DecreaseGold(archerMinionData.Price) == false)
+            if (goldManager.DecreaseGold(minionData.Price) == false)
             {
                 return;
             }
-            
-            Minion minion = Instantiate(archerPrefab, Data.GetPlayerCastlePosition(),
+
+            Minion minion = Instantiate(prefab, Data.GetPlayerCastlePosition(),
                 Data.GetPlayerFacing());
-            minion.Initialize(archerMinionData, MinionSide.Player);
+            minion.Initialize(minionData, MinionSide.Player);
             PlayerMinions.Add(minion);
+        }
+
+        public void GenerateWomanArcher()
+        {
+            GenerateMinion(Data.GetWomanArcherMinionData(), WomanArcherPrefab);
+        }
+
+        public void GenerateWomanAttacker()
+        {
+            GenerateMinion(Data.GetWomanAttackerMinionData(), WomanAttackerPrefab);
+        }
+
+        public void GenerateWomanWarrior()
+        {
+            GenerateMinion(Data.GetWomanWarriorMinionData(), WomanWarrior);
+        }
+
+        public void GenerateElfArcher()
+        {
+            GenerateMinion(Data.GetElfArcherMinionData(), ElfArcher);
+        }
+
+        public void GenerateElfAttacker()
+        {
+            GenerateMinion(Data.GetElfAttackerMinionData(), ElfAttacker);
+        }
+
+        public void GenerateKnightPikeman()
+        {
+            GenerateMinion(Data.GetKnightPikemanMinionData(), KnightPikeman);
+        }
+
+        public void GenerateKnightWarrior()
+        {
+            GenerateMinion(Data.GetKnightWarriorMinionData(), KnightWarrior);
         }
     }
 }

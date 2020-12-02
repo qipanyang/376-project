@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 464498112357891074}
   - component: {fileID: 935283152540973595}
   - component: {fileID: 8083322310765434555}
+  - component: {fileID: 7723745497250615080}
   m_Layer: 0
   m_Name: elf_attacher
   m_TagString: Untagged
@@ -130,3 +131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.134962, y: 5.6502304}
   m_EdgeRadius: 0
+--- !u!114 &7723745497250615080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109733129274027371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83bd5878ab304530a20f3f89723ceeb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionSide: 0
+  rb: {fileID: 0}
+  rd: {fileID: 0}
+  lastAttackTime: 0
+  animator: {fileID: 0}

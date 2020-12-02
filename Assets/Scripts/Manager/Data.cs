@@ -21,11 +21,41 @@ namespace Manager
         }
 
 
-        public static MinionData GetArcherMinionData()
+        public static MinionData GetWomanArcherMinionData()
         {
-            return new MinionData(200, 10, 1, 2, 2, 10);
+            return new MinionData(500, 20, 3, 2, 5, 100);
         }
-
+        
+        public static MinionData GetWomanAttackerMinionData()
+        {
+            return new MinionData(500, 50, 3, 2, 2, 100);
+        }
+        
+        public static MinionData GetElfArcherMinionData()
+        {
+            return new MinionData(500, 50, 3, 2, 2, 100);
+        }
+        
+        public static MinionData GetElfAttackerMinionData()
+        {
+            return new MinionData(500, 50, 3, 2, 2, 100);
+        }
+        
+        public static MinionData GetKnightPikemanMinionData()
+        {
+            return new MinionData(500, 50, 3, 2, 2, 100);
+        }
+        
+        public static MinionData GetKnightWarriorMinionData()
+        {
+            return new MinionData(500, 50, 3, 2, 2, 100);
+        }
+        
+        public static MinionData GetWomanWarriorMinionData()
+        {
+            return new MinionData(500, 50, 3, 2, 2, 100);
+        }
+        
         public static Quaternion GetPlayerFacing()
         {
             return Quaternion.Euler(0, 180, 0);
@@ -66,7 +96,6 @@ namespace Manager
             }
 
             return toAttack;
-
         }
     }
 }

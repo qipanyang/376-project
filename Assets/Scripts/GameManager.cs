@@ -43,9 +43,8 @@ public class GameManager : MonoBehaviour
 
     private void InitializeCastleStatus()
     {
-        EnemyCastle.Health = 200;
-        PlayerCastle.Health = 200;
-        PlayerCastle.MoneyRate = 20;
+        EnemyCastle.Health = 100000;
+        PlayerCastle.Health = 10000;
     }
     
     

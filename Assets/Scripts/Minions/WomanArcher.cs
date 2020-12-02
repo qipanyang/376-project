@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Minions
 {
-    public class Archer : Minion
+    public class WomanArcher : Minion
     {
 
     }

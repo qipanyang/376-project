@@ -5,8 +5,8 @@ namespace Manager
 {
     public class GoldManager : MonoBehaviour
     {
-        public int gold = 0;
-        public int goldRate = 1;
+        public int gold;
+        public int goldRate;
 
         private void Start()
         {

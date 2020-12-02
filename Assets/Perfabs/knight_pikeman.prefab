@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6780611320221665000}
   - component: {fileID: 1003056174031379646}
   - component: {fileID: 935768449651063363}
+  - component: {fileID: 2594927325651981102}
   m_Layer: 0
   m_Name: knight_pikeman
   m_TagString: Untagged
@@ -130,3 +131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.6173563, y: 5.608078}
   m_EdgeRadius: 0
+--- !u!114 &2594927325651981102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154376038904564514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f900a370862b4410987cfc5733c1fa79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionSide: 0
+  rb: {fileID: 0}
+  rd: {fileID: 0}
+  lastAttackTime: 0
+  animator: {fileID: 0}

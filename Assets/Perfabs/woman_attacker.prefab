@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7008194333794839319}
   - component: {fileID: 6716261712836598271}
   - component: {fileID: 9178405357007882401}
+  - component: {fileID: 6445468952816903099}
   m_Layer: 0
   m_Name: woman_attacker
   m_TagString: Untagged
@@ -130,3 +131,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6445468952816903099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008194333794839318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa069e633d148df897de11b0bf403c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionSide: 0
+  rb: {fileID: 0}
+  rd: {fileID: 0}
+  lastAttackTime: 0
+  animator: {fileID: 0}

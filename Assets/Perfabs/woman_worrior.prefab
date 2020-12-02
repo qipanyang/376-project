@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1813513399275497575}
   - component: {fileID: 2031727461416225093}
   - component: {fileID: 6655356621984883050}
+  - component: {fileID: 1599477356805374864}
   m_Layer: 0
   m_Name: woman_worrior
   m_TagString: Untagged
@@ -130,3 +131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.830399, y: 10.986099}
   m_EdgeRadius: 0
+--- !u!114 &1599477356805374864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3075804116686240087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b40d078c8d4fa4a6474a00710679c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionSide: 0
+  rb: {fileID: 0}
+  rd: {fileID: 0}
+  lastAttackTime: 0
+  animator: {fileID: 0}

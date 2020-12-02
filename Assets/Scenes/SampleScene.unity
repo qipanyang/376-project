@@ -268,7 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &156542785
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &225346949
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -468,7 +468,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &268460229
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateKnightPikeman
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1097,7 +1097,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateWomanAttacker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1228,7 +1228,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateElfArcher
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1344,7 +1344,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &842041148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1440,7 +1440,7 @@ GameObject:
   - component: {fileID: 975606182}
   - component: {fileID: 975606181}
   m_Layer: 5
-  m_Name: knight_worrior_Button
+  m_Name: knight_warrior_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1511,7 +1511,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateKnightWarrior
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1627,7 +1627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &1023079361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1792,7 +1792,7 @@ GameObject:
   - component: {fileID: 1030545675}
   - component: {fileID: 1030545674}
   m_Layer: 5
-  m_Name: elf_attacher_Button
+  m_Name: elf_attacker_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1863,7 +1863,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateElfAttacker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 1106214066}
   - component: {fileID: 1106214065}
   m_Layer: 5
-  m_Name: woman_worrior_Button
+  m_Name: woman_warrior_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2072,7 +2072,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateWomanWarrior
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2354,7 +2354,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813354576}
-        m_MethodName: GenerateArcher
+        m_MethodName: GenerateWomanArcher
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2847,7 +2847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &1623062991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3059,7 +3059,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $10
+  m_Text: $100
 --- !u!222 &1782362979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3240,7 +3240,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52cc79ad4b534c54920bb48589a86486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archerPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
+  WomanArcherPrefab: {fileID: 4825396658791279008, guid: f727e2cdeb25a47978fecbaf5d65816e,
+    type: 3}
+  WomanAttackerPrefab: {fileID: 6445468952816903099, guid: ea4b3e99285bb48488a399ce58ad2c4d,
+    type: 3}
+  WomanWarrior: {fileID: 1599477356805374864, guid: 15f614966b0834ad8a407f5aa7ef655c,
+    type: 3}
+  ElfArcher: {fileID: 1664776579251790790, guid: 995a6e5ee6f9841b4be28a86525572d4,
+    type: 3}
+  ElfAttacker: {fileID: 7723745497250615080, guid: 5f8cf5f9a4e4a4dc7be9bd65da2af451,
+    type: 3}
+  KnightPikeman: {fileID: 2594927325651981102, guid: e8a842e0c488a4f87b7daf7d0ec24125,
+    type: 3}
+  KnightWarrior: {fileID: 6596378530345491757, guid: f73b2bd0d5f394563a520bd231d935f9,
     type: 3}
   EnemyMinions: []
   PlayerMinions: []
@@ -3257,7 +3269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gold: 0
-  goldRate: 1
+  goldRate: 10
 --- !u!1 &1817667383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3484,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
-  MoneyRate: 0
 --- !u!1 &1932252627
 GameObject:
   m_ObjectHideFlags: 0

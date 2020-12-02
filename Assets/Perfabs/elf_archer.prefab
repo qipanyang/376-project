@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3991697860829675811}
   - component: {fileID: 4476502244465797987}
   - component: {fileID: 8649126741590090056}
+  - component: {fileID: 1664776579251790790}
   m_Layer: 0
   m_Name: elf_archer
   m_TagString: Untagged
@@ -130,3 +131,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1664776579251790790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643195714195137549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a4880967384fae9dd3ea9a72ac99f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionSide: 0
+  rb: {fileID: 0}
+  rd: {fileID: 0}
+  lastAttackTime: 0
+  animator: {fileID: 0}
