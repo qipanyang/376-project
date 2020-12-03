@@ -34,5 +34,20 @@ namespace Manager
             
             GameManager.Ctx.TextManager.UpdateGold(gold);
         }
+
+        public GoldData OnSave()
+        {
+            GoldData goldData = new GoldData();
+            goldData.gold = gold;
+            goldData.goldRate = goldRate;
+            return goldData;
+        }
+        
+    }
+
+    public class GoldData
+    {
+        public int gold;
+        public int goldRate;
     }
 }

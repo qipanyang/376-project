@@ -103,5 +103,39 @@ namespace Manager
         {
             GenerateMinion(Data.GetKnightWarriorMinionData(), KnightWarrior);
         }
+
+        public MinionListSaveData OnSave()
+        {
+            MinionListSaveData minionListSaveData = new MinionListSaveData();
+            var minionObjects = FindObjectsOfType(typeof(Minion));
+            foreach (Minion oneMinionObject in minionObjects)
+            {
+                MinionSaveData minion = new MinionSaveData();
+                minion.minionSide = oneMinionObject.minionSide;
+                minion.minionData = oneMinionObject.minionData;
+                minion.Pos = oneMinionObject.GetComponent<Rigidbody2D>().position;
+                //minion.rd = oneMinionObject.rd;
+                minion.lastAttackTime = oneMinionObject.lastAttackTime;
+                minionListSaveData.Minions.Add(minion);
+
+            }
+            return minionListSaveData;
+        }
     }
+
+    public class MinionListSaveData
+    {
+        public List<MinionSaveData> Minions = new List<MinionSaveData>();
+    }
+
+    public class MinionSaveData
+    {
+        public MinionSide minionSide;
+        public MinionData minionData;
+        public Vector2 Pos;
+        //public Rigidbody2D rb;
+        //public Renderer rd;
+        public float lastAttackTime;
+    }
+
 }

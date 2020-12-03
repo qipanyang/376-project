@@ -18,5 +18,10 @@ namespace Minions
             Range = range;
             Price = price;
         }
+
+        private MinionData()
+        {
+
+        }
     }
 }
