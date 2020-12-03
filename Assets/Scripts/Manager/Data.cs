@@ -23,7 +23,7 @@ namespace Manager
 
         public static MinionData GetWomanArcherMinionData()
         {
-            return new MinionData(500, 20, 3, 2, 5, 100);
+            return new MinionData(50, 20, 3, 2, 5, 100);
         }
         
         public static MinionData GetWomanAttackerMinionData()

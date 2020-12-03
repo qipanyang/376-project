@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 935283152540973595}
   - component: {fileID: 8083322310765434555}
   - component: {fileID: 7723745497250615080}
+  - component: {fileID: -6130599738577242138}
   m_Layer: 0
   m_Name: elf_attacher
   m_TagString: Untagged
@@ -147,4 +148,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   rd: {fileID: 0}
   lastAttackTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: -6130599738577242138}
+--- !u!95 &-6130599738577242138
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109733129274027371}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 806cb10e5dd944cbbaf6b98cadc9b3ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

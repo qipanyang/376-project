@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4476502244465797987}
   - component: {fileID: 8649126741590090056}
   - component: {fileID: 1664776579251790790}
+  - component: {fileID: -2034186332472121494}
   m_Layer: 0
   m_Name: elf_archer
   m_TagString: Untagged
@@ -147,4 +148,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   rd: {fileID: 0}
   lastAttackTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: -2034186332472121494}
+--- !u!95 &-2034186332472121494
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643195714195137549}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24f62911efd8e4918beb9802dd73e266, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1003056174031379646}
   - component: {fileID: 935768449651063363}
   - component: {fileID: 2594927325651981102}
+  - component: {fileID: 3455470309342313740}
   m_Layer: 0
   m_Name: knight_pikeman
   m_TagString: Untagged
@@ -147,4 +148,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   rd: {fileID: 0}
   lastAttackTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: 3455470309342313740}
+--- !u!95 &3455470309342313740
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154376038904564514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5dff876dc0b584d0692cc24e0273f4cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

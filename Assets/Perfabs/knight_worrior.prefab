@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8872066827024464271}
   - component: {fileID: 802716310742201320}
   - component: {fileID: 6596378530345491757}
+  - component: {fileID: 4236030619025768190}
   m_Layer: 0
   m_Name: knight_worrior
   m_TagString: Untagged
@@ -147,4 +148,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   rd: {fileID: 0}
   lastAttackTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: 4236030619025768190}
+--- !u!95 &4236030619025768190
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085009778037642800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0d0789266a464db9b93a0d4e95222c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

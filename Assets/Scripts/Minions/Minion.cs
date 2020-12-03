@@ -36,16 +36,19 @@ namespace Minions
             Minion toAttack = Data.FindMinionToAttack(this, minions);
             if (!(toAttack is null))
             {
+                animator.SetBool("Attack", true); // animation
                 SetVelocity(0);
                 Attack(toAttack);
             }
             else if (CheckCanAttackTower())
             {
+                animator.SetBool("Attack", true); // animation
                 SetVelocity(0);
                 AttackCastle();
             }
             else
             {
+                animator.SetBool("Attack", false); // animation
                 SetVelocity(minionData.Velocity);
             }
             
@@ -71,7 +74,6 @@ namespace Minions
             {
                 lastAttackTime = now;
                 //StartCoroutine(RotateMinion()); // animation
-                animator.SetBool("Attack", true); // animation
                 return true;
             }
             return false;
@@ -144,9 +146,16 @@ namespace Minions
             return minionData.Health <= 0;
         }
 
+        private IEnumerator _DestroyGameObject()
+        {
+            yield return new WaitForSeconds(1f);
+            Destroy(gameObject);
+        }
+
         public void DestroyGameObject()
         {
-            Destroy(gameObject);
+            animator.SetBool("Die", true); // animation
+            StartCoroutine(_DestroyGameObject());
         }
     }
 }

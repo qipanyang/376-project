@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6716261712836598271}
   - component: {fileID: 9178405357007882401}
   - component: {fileID: 6445468952816903099}
+  - component: {fileID: -5826411134953609801}
   m_Layer: 0
   m_Name: woman_attacker
   m_TagString: Untagged
@@ -147,4 +148,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   rd: {fileID: 0}
   lastAttackTime: 0
-  animator: {fileID: 0}
+  animator: {fileID: -5826411134953609801}
+--- !u!95 &-5826411134953609801
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008194333794839318}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02f3ed123224f48f2a759866e7178d39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
