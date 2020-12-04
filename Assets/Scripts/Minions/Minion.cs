@@ -10,16 +10,18 @@ namespace Minions
         public MinionData minionData;
         public Rigidbody2D rb;
         public Renderer rd;
+        public string minionType;
         public float lastAttackTime;
         private bool _isChangingColor; // don't save
         private bool _isRotating; // don't save
         
         public Animator animator; // animation
 
-        public void Initialize(MinionData minionData, MinionSide minionSide)
+        public void Initialize(MinionData minionData, MinionSide minionSide, string prefabName)
         {
             this.minionData = minionData;
             this.minionSide = minionSide;
+            this.minionType = prefabName;
         }
 
         void Start()

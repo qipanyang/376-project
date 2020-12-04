@@ -31,7 +31,8 @@ namespace Manager
             {
                 Minion minion = Instantiate(WomanArcherPrefab, Data.GetEnemyCastlePosition(),
                     Data.GetEnemyFacing());
-                minion.Initialize(Data.GetWomanArcherMinionData(), MinionSide.Enemy);
+
+                minion.Initialize(Data.GetWomanArcherMinionData(), MinionSide.Enemy, WomanArcherPrefab.name);
                 EnemyMinions.Add(minion);
             }
         }
@@ -65,7 +66,7 @@ namespace Manager
 
             Minion minion = Instantiate(prefab, Data.GetPlayerCastlePosition(),
                 Data.GetPlayerFacing());
-            minion.Initialize(minionData, MinionSide.Player);
+            minion.Initialize(minionData, MinionSide.Player, prefab.name);
             PlayerMinions.Add(minion);
         }
 
@@ -114,11 +115,13 @@ namespace Manager
                 minion.minionSide = oneMinionObject.minionSide;
                 minion.minionData = oneMinionObject.minionData;
                 minion.Pos = oneMinionObject.GetComponent<Rigidbody2D>().position;
-                //minion.rd = oneMinionObject.rd;
-                minion.lastAttackTime = oneMinionObject.lastAttackTime;
+                minion.lastAttackTime = oneMinionObject.lastAttackTime;              
+                minion.minionType = oneMinionObject.minionType;
                 minionListSaveData.Minions.Add(minion);
 
             }
+
+
             return minionListSaveData;
         }
     }
@@ -132,9 +135,8 @@ namespace Manager
     {
         public MinionSide minionSide;
         public MinionData minionData;
+        public string minionType;
         public Vector2 Pos;
-        //public Rigidbody2D rb;
-        //public Renderer rd;
         public float lastAttackTime;
     }
 
