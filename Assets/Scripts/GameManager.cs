@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     private void InitializeCastleStatus()
     {
         EnemyCastle.Health = 1000;
-        PlayerCastle.Health = 10000;
+        PlayerCastle.Health = 1000;
     }
     
     

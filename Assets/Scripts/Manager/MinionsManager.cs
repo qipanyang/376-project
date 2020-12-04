@@ -23,12 +23,12 @@ namespace Manager
 
         internal void Start()
         {
-            InvokeRepeating(nameof(SpawnEnemyMinions), 0, 0.5f);
+            InvokeRepeating(nameof(SpawnEnemyMinions), 0, 5f);
         }
 
         public void SpawnEnemyMinions()
         {
-            if (EnemyMinions.Count <= 10)
+            if (EnemyMinions.Count <= 5)
             {
                 var nn = Random.Range(0, 7);
                 switch (nn)
