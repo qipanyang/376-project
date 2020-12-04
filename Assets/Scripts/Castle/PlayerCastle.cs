@@ -6,7 +6,6 @@ namespace Castle
 {
     public class PlayerCastle : Castle
     {
-        public static int MoneyRate { get; set; }
         // Start is called before the first frame update
         void Start()
         {
@@ -15,6 +14,7 @@ namespace Castle
         // Update is called once per frame
         void Update()
         {
+            GameManager.Ctx.TextManager.UpdatePlayerCastleHealth(Health);
         }
     }
 }

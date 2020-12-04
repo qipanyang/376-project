@@ -9,11 +9,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Ctx;
 
-    public Minions.Archer archerPrefab;
+    public TextManager TextManager;
+
     public GameObject playerCastleObject;
     public GameObject enemyCastleObject;
 
     public MinionsManager MinionsManager;
+    public GoldManager GoldManager;
+    
+    public EnemyCastle EnemyCastle;
+    public PlayerCastle PlayerCastle;
+    
 	// setup camera follow system
 	private CameraFollow _cameraFollow;
 	private Vector3 _cameraFollowPosition;
@@ -25,7 +31,9 @@ public class GameManager : MonoBehaviour
 	    
 	    Ctx = this;
 	    MinionsManager = GetComponent<MinionsManager>();
-	    
+	    GoldManager = GetComponent<GoldManager>();
+	    TextManager = new TextManager();
+
 	    // setup camera follow system
 	    _cameraFollow = GameObject.FindWithTag("MainCamera").GetComponent<CameraFollow>();
 	    _cameraFollow.Setup(() => _cameraFollowPosition);
@@ -35,9 +43,8 @@ public class GameManager : MonoBehaviour
 
     private void InitializeCastleStatus()
     {
-        EnemyCastle.Health = 200;
-        PlayerCastle.Health = 200;
-        PlayerCastle.MoneyRate = 20;
+        EnemyCastle.Health = 100000;
+        PlayerCastle.Health = 10000;
     }
     
     
@@ -55,6 +62,15 @@ public class GameManager : MonoBehaviour
 		    _cameraFollowPosition.x += movement * Time.deltaTime;
 	    if (Input.mousePosition.x < edgeSize)
 		    _cameraFollowPosition.x -= movement * Time.deltaTime;
+    }
+
+    public void LoadData(SaveManager.SaveData saveData)
+    {
+        GoldManager.OnLoad(saveData.goldData);
+        MinionsManager.OnLoad(saveData.minionListSaveData);
+        Ctx.EnemyCastle.Health = saveData.EnemyCastleHealth;
+        Ctx.PlayerCastle.Health = saveData.PlayerCastleHealth;
+
     }
 
 }

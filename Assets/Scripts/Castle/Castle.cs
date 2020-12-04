@@ -4,6 +4,11 @@ namespace Castle
 {
     public abstract class Castle: MonoBehaviour
     {
-        public static int Health { get; set; }
+        public int Health;
+
+        public void IsAttacked(int damage)
+        {
+            Health -= damage;
+        }
     }
 }
