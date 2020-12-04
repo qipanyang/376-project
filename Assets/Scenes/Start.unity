@@ -793,7 +793,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to the '
+  m_text: 'Welcome to the Battle Castle
+
+    This is battle game where players can
+    purchase the minions to fight for you. You will gain gold as time passed and
+    purchase the minion using the gold.
+
+    1. To Purchase the minion. Click on
+    the button on the screen. Once you succefully purchased the minion, the minion
+    will be spawned from your castle and fight for you.
+
+    2. To move the camera
+    around, use left arrow and right arrow to move the camera left and right. You
+    can also use the mouse to move camera left and right by hovering the left and
+    right side of the game scene.
+
+    3. To pasue, save, or load the game, you can
+    press ESC to activate the menu.
+
+    4. To win the game, you have to attack the
+    enemy castle until the health reaches 0. If your castle''s health reach 0, you
+    will lose the game.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -1,207 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Animation/anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_archer_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/elf_attacker_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_pikeman_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/knight_warrior_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_archer_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_attacker_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior_attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior_attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior_die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior_die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior_walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Animation/anim/woman_warrior_walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scenes/LoseScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scenes/LoseScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scenes/Start.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scenes/Start.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scenes/WinScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scenes/WinScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/Data.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/Data.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/GoldManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/GoldManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/SaveManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/SaveManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus/ButtonManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus/ButtonManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus/MainMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus/MainMenu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus/PauseMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Menus/PauseMenu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/ElfArcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/ElfArcher.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/ElfAttacker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/ElfAttacker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/KnightPikeman.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/KnightPikeman.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/KnightWarrior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/KnightWarrior.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/MinionData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/MinionData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/MinionSide.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/MinionSide.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/WomanArcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/WomanAttacker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/WomanAttacker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/WomanWarrior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minions/WomanWarrior.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sprite/Background.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sprite/Background/Gold.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sprite/Background/Gold.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sprite/Background/StartMenuBackgroundPic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sprite/Background/StartMenuBackgroundPic.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Documentation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/elf_archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/elf_archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/elf_archer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/elf_archer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/elf_attacher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/elf_attacher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/elf_attacher.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/elf_attacher.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/knight_pikeman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/knight_pikeman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/knight_pikeman.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/knight_pikeman.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/knight_worrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/knight_worrior.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/knight_worrior.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/knight_worrior.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/woman_archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/woman_archer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_archer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/woman_attacker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_attacker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/woman_attacker.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_attacker.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/woman_worrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_worrior.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Perfabs/woman_worrior.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_worrior.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Castle/Castle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Castle/Castle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Castle/EnemyCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Castle/EnemyCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Castle/PlayerCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Castle/PlayerCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manager/MinionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/MinionsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minions/Archer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minions/Archer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/WomanArcher.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minions/Minion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/Minion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,10 +11,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Minions/KnightWarrior.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Manager/Data.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Manager/MinionsManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TextManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Minions/ElfArcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CameraFollow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Minions/Minion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Minions/ElfAttacker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Minions/KnightPikeman.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1kik3XoE0oL7QwnAzGMEMlvLKz2" />
@@ -237,7 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606190602278</updated>
       <workItem from="1606775396569" duration="409000" />
-      <workItem from="1607116400997" duration="386000" />
+      <workItem from="1607116400997" duration="670000" />
     </task>
     <servers />
   </component>
