@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Minions;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Manager
 {
@@ -22,18 +23,38 @@ namespace Manager
 
         internal void Start()
         {
-            InvokeRepeating(nameof(SpawnEnemyMinions), 0, 3f);
+            InvokeRepeating(nameof(SpawnEnemyMinions), 0, 0.5f);
         }
 
         public void SpawnEnemyMinions()
         {
             if (EnemyMinions.Count <= 10)
             {
-                Minion minion = Instantiate(WomanArcherPrefab, Data.GetEnemyCastlePosition(),
-                    Data.GetEnemyFacing());
-
-                minion.Initialize(Data.GetWomanArcherMinionData(), MinionSide.Enemy, WomanArcherPrefab.name);
-                EnemyMinions.Add(minion);
+                var nn = Random.Range(0, 7);
+                switch (nn)
+                {
+                    case 0:
+                        GenerateEnemyMinion(Data.GetWomanArcherMinionData(), WomanArcherPrefab);
+                        break;
+                    case 1:
+                        GenerateEnemyMinion(Data.GetWomanAttackerMinionData(), WomanAttackerPrefab);
+                        break;
+                    case 2:
+                        GenerateEnemyMinion(Data.GetWomanWarriorMinionData(), WomanWarrior);
+                        break;
+                    case 3:
+                        GenerateEnemyMinion(Data.GetElfArcherMinionData(), ElfArcher);
+                        break;
+                    case 4:
+                        GenerateEnemyMinion(Data.GetElfArcherMinionData(), ElfArcher);
+                        break;
+                    case 5:
+                        GenerateEnemyMinion(Data.GetKnightPikemanMinionData(), KnightPikeman);
+                        break;
+                    case 6:
+                        GenerateEnemyMinion(Data.GetKnightWarriorMinionData(), KnightWarrior);
+                        break;
+                }
             }
         }
 
@@ -54,6 +75,14 @@ namespace Manager
             }
 
             minions.RemoveAll(minion => minion.IsDead());
+        }
+
+        private void GenerateEnemyMinion(MinionData minionData, Minion prefab)
+        {
+            Minion minion = Instantiate(prefab, Data.GetEnemyCastlePosition(),
+                Data.GetEnemyFacing());
+            minion.Initialize(minionData, MinionSide.Enemy, prefab.name);
+            EnemyMinions.Add(minion);
         }
 
         private void GenerateMinion(MinionData minionData, Minion prefab)
