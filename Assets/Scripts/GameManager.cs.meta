@@ -3,7 +3,15 @@ guid: d3d1275b139194c8b8a46bec42b57d6b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerCastleObject: {instanceID: 0}
+  - enemyCastleObject: {instanceID: 0}
+  - MinionsManager: {instanceID: 0}
+  - GoldManager: {instanceID: 0}
+  - EnemyCastle: {instanceID: 0}
+  - PlayerCastle: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - castle_explore: {fileID: 8300000, guid: a7e0fd10779da433391f843703c3ac77, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -83,8 +83,10 @@ namespace Minions
 
         public void Attack(Minion minion)
         {
+            
             if (CanAttack())
             {
+                beforeAttack();
                 minion.IsAttacked(minionData.AttackDamage);
             }
         }
@@ -93,6 +95,7 @@ namespace Minions
         {
             if (CanAttack())
             {
+                beforeAttack();
                 GameManager ctx = GameManager.Ctx;
                 if (minionSide == MinionSide.Enemy)
                 {
@@ -159,5 +162,8 @@ namespace Minions
             animator.SetBool("Die", true); // animation
             StartCoroutine(_DestroyGameObject());
         }
+
+        public abstract void beforeAttack();
+
     }
 }

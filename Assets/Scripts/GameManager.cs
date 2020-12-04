@@ -8,6 +8,19 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+	private static GameManager _instance;
+	public static GameManager Instance => _instance;
+	private void Awake()
+	{
+		if (_instance != null)
+		{
+			Destroy(gameObject);
+		}
+		else
+		{
+			_instance = this;
+		}
+	}
     public static GameManager Ctx;
 
     public TextManager TextManager;
@@ -45,7 +58,7 @@ public class GameManager : MonoBehaviour
     private void InitializeCastleStatus()
     {
         EnemyCastle.Health = 1000;
-        PlayerCastle.Health = 10000;
+        PlayerCastle.Health = 1000;
     }
     
     
@@ -72,13 +85,7 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("LoseScene");
         }
-        
-            
-     
-
     }
-
-    
 
     public void LoadData(SaveManager.SaveData saveData)
     {

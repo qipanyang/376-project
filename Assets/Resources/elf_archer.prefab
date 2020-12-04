@@ -150,6 +150,7 @@ MonoBehaviour:
   minionType: 
   lastAttackTime: 0
   animator: {fileID: -2034186332472121494}
+  attack: {fileID: 8300000, guid: 0fc02b7ed11b44d859c274dea7da187d, type: 3}
 --- !u!95 &-2034186332472121494
 Animator:
   serializedVersion: 3
