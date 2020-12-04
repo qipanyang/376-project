@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="" />
+    <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager/MinionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/MinionsManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +26,13 @@
     <setting file="file://$PROJECT_DIR$/Minions/KnightPikeman.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Manager/MinionsManager.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1kik3XoE0oL7QwnAzGMEMlvLKz2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -42,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606190602278</updated>
       <workItem from="1606775396569" duration="409000" />
-      <workItem from="1607116400997" duration="670000" />
+      <workItem from="1607116400997" duration="2226000" />
     </task>
     <servers />
   </component>

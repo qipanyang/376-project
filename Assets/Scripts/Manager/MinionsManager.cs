@@ -19,6 +19,11 @@ namespace Manager
 
         public List<Minion> EnemyMinions = new List<Minion>();
         public List<Minion> PlayerMinions = new List<Minion>();
+        
+        public AudioSource audioSource;
+        public AudioClip generate;
+        // public AudioClip destroy;
+        // public AudioClip score;
 
         internal void Start()
         {
@@ -68,6 +73,7 @@ namespace Manager
                 Data.GetPlayerFacing());
             minion.Initialize(minionData, MinionSide.Player, prefab.name);
             PlayerMinions.Add(minion);
+            audioSource.PlayOneShot(generate);
         }
 
         public void GenerateWomanArcher()
