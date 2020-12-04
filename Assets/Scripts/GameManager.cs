@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Castle;
 using Manager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void InitializeCastleStatus()
     {
-        EnemyCastle.Health = 100000;
+        EnemyCastle.Health = 1000;
         PlayerCastle.Health = 10000;
     }
     
@@ -62,7 +63,22 @@ public class GameManager : MonoBehaviour
 		    _cameraFollowPosition.x += movement * Time.deltaTime;
 	    if (Input.mousePosition.x < edgeSize)
 		    _cameraFollowPosition.x -= movement * Time.deltaTime;
+
+        if (EnemyCastle.Health <= 0)
+        {
+            SceneManager.LoadScene("WinScene");
+        }
+        else if (PlayerCastle.Health <=0)
+        {
+            SceneManager.LoadScene("LoseScene");
+        }
+        
+            
+     
+
     }
+
+    
 
     public void LoadData(SaveManager.SaveData saveData)
     {

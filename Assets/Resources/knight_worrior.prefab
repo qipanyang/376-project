@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7085009778037642800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.03, y: -2.464, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.275, z: 1}
+  m_LocalScale: {x: 0.3723437, y: 0.3413151, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -147,6 +147,7 @@ MonoBehaviour:
   minionSide: 0
   rb: {fileID: 0}
   rd: {fileID: 0}
+  minionType: 
   lastAttackTime: 0
   animator: {fileID: 4236030619025768190}
 --- !u!95 &4236030619025768190

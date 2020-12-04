@@ -147,6 +147,7 @@ MonoBehaviour:
   minionSide: 0
   rb: {fileID: 0}
   rd: {fileID: 0}
+  minionType: 
   lastAttackTime: 0
   animator: {fileID: -5826411134953609801}
 --- !u!95 &-5826411134953609801
