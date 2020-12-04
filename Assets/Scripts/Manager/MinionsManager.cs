@@ -124,6 +124,55 @@ namespace Manager
 
             return minionListSaveData;
         }
+
+        public void OnLoad(MinionListSaveData minionList)
+        {
+            Clear();
+            foreach (MinionSaveData minionData in minionList.Minions)
+            {
+                if (minionData.minionSide == MinionSide.Enemy)
+                {
+                    var prefabGameObject = Resources.Load(minionData.minionType) as GameObject;
+                    Minion prefab = prefabGameObject.GetComponent<Minion>();
+                    Minion minion = Instantiate(prefab, minionData.Pos,
+    Data.GetEnemyFacing()) ;
+                    minion.Initialize(minionData.minionData, MinionSide.Enemy, minionData.minionType);
+                    EnemyMinions.Add(minion);
+                }
+                else
+                {
+                    var prefabGameObject = Resources.Load(minionData.minionType) as GameObject;
+                    Minion prefab = prefabGameObject.GetComponent<Minion>();
+                    Minion minion = Instantiate(prefab, minionData.Pos,
+    Data.GetPlayerFacing());
+                    minion.Initialize(minionData.minionData, MinionSide.Player, minionData.minionType);
+                    PlayerMinions.Add(minion);
+
+                }
+
+
+            }
+
+        }
+
+        public void Clear()
+        {
+            foreach (Minion minion in EnemyMinions)
+            {
+                UnityEngine.Object.Destroy(minion.gameObject);
+            }
+
+            foreach (Minion minion in PlayerMinions)
+            {
+                UnityEngine.Object.Destroy(minion.gameObject);
+            }
+
+            EnemyMinions.Clear();
+            PlayerMinions.Clear();
+            
+        }
+
+        
     }
 
     public class MinionListSaveData

@@ -64,4 +64,13 @@ public class GameManager : MonoBehaviour
 		    _cameraFollowPosition.x -= movement * Time.deltaTime;
     }
 
+    public void LoadData(SaveManager.SaveData saveData)
+    {
+        GoldManager.OnLoad(saveData.goldData);
+        MinionsManager.OnLoad(saveData.minionListSaveData);
+        Ctx.EnemyCastle.Health = saveData.EnemyCastleHealth;
+        Ctx.PlayerCastle.Health = saveData.PlayerCastleHealth;
+
+    }
+
 }

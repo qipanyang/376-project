@@ -42,6 +42,12 @@ namespace Manager
             goldData.goldRate = goldRate;
             return goldData;
         }
+
+        public void OnLoad(GoldData goldData)
+        {
+            gold = goldData.gold;
+            goldRate = goldData.goldRate;
+        }
         
     }
 

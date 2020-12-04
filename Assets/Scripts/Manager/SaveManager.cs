@@ -28,6 +28,7 @@ public class SaveManager : MonoBehaviour
         Button savebtn = saveButton.GetComponent<Button>();
         Button loadbtn = loadButton.GetComponent<Button>();
         savebtn.onClick.AddListener(Save);
+        loadbtn.onClick.AddListener(Load);
     }
 
     // Update is called once per frame
@@ -55,9 +56,12 @@ public class SaveManager : MonoBehaviour
             var serializer = new XmlSerializer(typeof(SaveData));
             var stream = new FileStream(_path + ".txt", FileMode.Open);
             data = serializer.Deserialize(stream) as SaveData;
+            GameManager.Ctx.LoadData(data);
             stream.Close();
 
+
             Debug.Log("Loading.." + _path);
+
         }
         else Debug.Log("No Loading Files" );
     }
