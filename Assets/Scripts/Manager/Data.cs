@@ -23,37 +23,37 @@ namespace Manager
 
         public static MinionData GetWomanArcherMinionData()
         {
-            return new MinionData(50, 20, 3, 2, 5, 100);
+            return new MinionData(200, 50, 1, 2, 5, 150);
         }
         
         public static MinionData GetWomanAttackerMinionData()
         {
-            return new MinionData(500, 50, 3, 2, 2, 100);
+            return new MinionData(200, 80, 1, 6, 1, 100);
         }
         
         public static MinionData GetElfArcherMinionData()
         {
-            return new MinionData(500, 50, 3, 2, 2, 100);
+            return new MinionData(200, 60, 1, 3, 5, 150);
         }
         
         public static MinionData GetElfAttackerMinionData()
         {
-            return new MinionData(500, 50, 3, 2, 2, 100);
+            return new MinionData(300, 50, 1, 3, 1, 120);
         }
         
         public static MinionData GetKnightPikemanMinionData()
         {
-            return new MinionData(500, 50, 3, 2, 2, 100);
+            return new MinionData(500, 80, 1, 4, 2, 250);
         }
         
         public static MinionData GetKnightWarriorMinionData()
         {
-            return new MinionData(500, 50, 3, 2, 2, 100);
+            return new MinionData(800, 30, 1, 2, 0.5f, 200);
         }
         
         public static MinionData GetWomanWarriorMinionData()
         {
-            return new MinionData(500, 50, 3, 2, 2, 100);
+            return new MinionData(400, 15, 1 , 2, 0.5f, 100);
         }
         
         public static Quaternion GetPlayerFacing()

@@ -10,7 +10,7 @@ namespace Manager
 
         private void Start()
         {
-            InvokeRepeating(nameof(IncreaseGold), 0, 0.1f);
+            InvokeRepeating(nameof(IncreaseGold), 0, 0.2f);
         }
 
         private void IncreaseGold()
