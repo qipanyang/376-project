@@ -51,7 +51,7 @@ public class SaveManager : MonoBehaviour
 
     void Load()
     {
-        if (File.Exists(_path + "save.save"))
+        if (File.Exists(_path + ".txt"))
         {
             var serializer = new XmlSerializer(typeof(SaveData));
             var stream = new FileStream(_path + ".txt", FileMode.Open);

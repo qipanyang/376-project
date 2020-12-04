@@ -133,8 +133,10 @@ namespace Manager
                 if (minionData.minionSide == MinionSide.Enemy)
                 {
                     var prefabGameObject = Resources.Load(minionData.minionType) as GameObject;
+                    Vector3 castlePos = GameManager.Ctx.enemyCastleObject.transform.position;
+                    var pos = new Vector3(minionData.Pos.x, minionData.Pos.y, castlePos.z - 1);
                     Minion prefab = prefabGameObject.GetComponent<Minion>();
-                    Minion minion = Instantiate(prefab, minionData.Pos,
+                    Minion minion = Instantiate(prefab, pos,
     Data.GetEnemyFacing()) ;
                     minion.Initialize(minionData.minionData, MinionSide.Enemy, minionData.minionType);
                     EnemyMinions.Add(minion);
@@ -142,8 +144,10 @@ namespace Manager
                 else
                 {
                     var prefabGameObject = Resources.Load(minionData.minionType) as GameObject;
+                    Vector3 castlePos = GameManager.Ctx.playerCastleObject.transform.position;
+                    var pos = new Vector3(minionData.Pos.x, minionData.Pos.y, castlePos.z - 1);
                     Minion prefab = prefabGameObject.GetComponent<Minion>();
-                    Minion minion = Instantiate(prefab, minionData.Pos,
+                    Minion minion = Instantiate(prefab, pos,
     Data.GetPlayerFacing());
                     minion.Initialize(minionData.minionData, MinionSide.Player, minionData.minionType);
                     PlayerMinions.Add(minion);
