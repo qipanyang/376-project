@@ -16,7 +16,7 @@ namespace Minions
         private bool _isRotating; // don't save
         
         public Animator animator; // animation
-
+        public AudioClip attack;
         public void Initialize(MinionData minionData, MinionSide minionSide, string prefabName)
         {
             this.minionData = minionData;

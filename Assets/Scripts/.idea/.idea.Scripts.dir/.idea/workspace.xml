@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8aa56e0-e806-4827-a58c-0fa9b75a2df1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Resources/elf_archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/elf_archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Resources/knight_pikeman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/knight_pikeman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Resources/woman_archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Resources/woman_attacker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Resources/woman_attacker.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Castle/Castle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Castle/Castle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/ElfArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/ElfArcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/ElfAttacker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/ElfAttacker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/KnightPikeman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/KnightPikeman.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/KnightWarrior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/KnightWarrior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/Minion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/Minion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/WomanArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/WomanArcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/WomanAttacker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/WomanAttacker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minions/WomanWarrior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Minions/WomanWarrior.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Minions/WomanArcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Minions/WomanAttacker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Minions/WomanWarrior.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Castle/Castle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Minions/Minion.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -40,15 +47,16 @@
         <option value="$PROJECT_DIR$/Manager/MinionsManager.cs" />
         <option value="$PROJECT_DIR$/WinPage.cs" />
         <option value="$PROJECT_DIR$/LosePage.cs" />
-        <option value="$PROJECT_DIR$/Minions/Minion.cs" />
         <option value="$PROJECT_DIR$/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Minions/ElfArcher.cs" />
-        <option value="$PROJECT_DIR$/Minions/KnightWarrior.cs" />
-        <option value="$PROJECT_DIR$/Minions/KnightPikeman.cs" />
-        <option value="$PROJECT_DIR$/Minions/ElfAttacker.cs" />
         <option value="$PROJECT_DIR$/Minions/WomanArcher.cs" />
-        <option value="$PROJECT_DIR$/Minions/WomanAttacker.cs" />
+        <option value="$PROJECT_DIR$/Minions/ElfArcher.cs" />
+        <option value="$PROJECT_DIR$/Minions/ElfAttacker.cs" />
         <option value="$PROJECT_DIR$/Minions/WomanWarrior.cs" />
+        <option value="$PROJECT_DIR$/Minions/WomanAttacker.cs" />
+        <option value="$PROJECT_DIR$/Minions/KnightPikeman.cs" />
+        <option value="$PROJECT_DIR$/Castle/Castle.cs" />
+        <option value="$PROJECT_DIR$/Minions/KnightWarrior.cs" />
+        <option value="$PROJECT_DIR$/Minions/Minion.cs" />
       </list>
     </option>
   </component>
@@ -73,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606190602278</updated>
       <workItem from="1606775396569" duration="409000" />
-      <workItem from="1607116400997" duration="6197000" />
+      <workItem from="1607116400997" duration="8288000" />
     </task>
     <servers />
   </component>

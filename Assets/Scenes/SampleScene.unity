@@ -2749,6 +2749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
+  attacked: {fileID: 8300000, guid: 8c9b2eff513f448d281430937d0ca326, type: 3}
 --- !u!1 &1553485127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3628,6 +3629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
+  attacked: {fileID: 8300000, guid: 8c9b2eff513f448d281430937d0ca326, type: 3}
 --- !u!1 &1932252627
 GameObject:
   m_ObjectHideFlags: 0
