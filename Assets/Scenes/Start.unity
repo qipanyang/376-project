@@ -2203,7 +2203,8 @@ MonoBehaviour:
     and vice versa. \n- To move the camera view around, use left and right arrows
     on your keyboard or hover your mouse on the left or right side of the game scene.
     \n- To pause, save, or load the game, you can press ESC anytime during the game
-    to display the menu. \n\n7 Types of Minions\n\u2026\u2026"
+    to display the menu. \n\nThere are 7 types of minions with different attributes.
+    Please explore by yourself~"
 --- !u!222 &1820102307
 CanvasRenderer:
   m_ObjectHideFlags: 0
